@@ -879,3 +879,5 @@ sub event_message ($$$) {
 
 Irssi::signal_add_first('message public', 'event_message');
 Irssi::signal_add_first('message private', 'event_message');
+Irssi::signal_add_first('message own_private', 'event_message');
+Irssi::signal_add_first('message own_public', 'event_message');
